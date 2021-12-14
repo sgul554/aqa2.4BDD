@@ -38,4 +38,14 @@ public class DashboardPage {
         val value = text.substring(start + balanceStart.length(), finish);
         return Integer.parseInt(value);
     }
+
+    public TransferPage firstCardDeposit(){
+        buttonFirstCard.click();
+        return new TransferPage();
+    }
+
+    public TransferPage secondCardDeposit(){
+        buttonSecondCard.click();
+        return new TransferPage();
+    }
 }
